@@ -1,4 +1,4 @@
-import { Graduate, Company, Assignment, ExamResult, Major } from '../types';
+import { Graduate, Company, Assignment, ExamResult } from '../types';
 import { 
   getGraduates, 
   getCompanies, 

@@ -1,6 +1,4 @@
 import { Company, Major, TrainingField } from '../types';
-import { generateId } from '../utils/storage';
-import { saudiCities } from './cities';
 
 // Sample company data
 const companyTemplates = [

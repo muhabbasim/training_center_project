@@ -10,7 +10,10 @@ export type Major =
   | 'إدارة الأعمال'
   | 'المحاسبة'
   | 'التسويق'
-  | 'الذكاء الاصطناعي';
+  | 'الذكاء الاصطناعي'
+  | 'نظم المعلومات'
+  | 'الأمن السيبراني'
+  | 'علم البيانات';
 
 // Training status
 export type TrainingStatus = 'pending' | 'assigned' | 'in-progress' | 'completed';
@@ -38,6 +41,7 @@ export interface Graduate extends BaseUser {
   assignedCompanyId?: string;
   trainingStatus: TrainingStatus;
   selectedCompanyId?: string; // Company selected by graduate
+  gpa?: number;
 }
 
 // Training field offered by companies

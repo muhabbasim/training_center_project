@@ -20,7 +20,7 @@ export default function CompanySelection() {
   const { user, updateUser } = useAuth();
   const graduate = user as Graduate;
   const navigate = useNavigate();
-  const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(null);
+  const [selectedCompanyId] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   if (!graduate) return null;

@@ -107,7 +107,8 @@ export default function CompanyRegister() {
       const { confirmPassword, ...registrationData } = formData;
       const success = await registerCompany({
         ...registrationData,
-        trainingFields
+        trainingFields,
+        profileCompleted: false
       });
       
       if (success) {

@@ -201,7 +201,7 @@ export default function Exam() {
 
       {/* Questions */}
       <div className="space-y-6">
-        {currentQuestions.map((question, index) => (
+        {currentQuestions.map((question) => (
           <div key={question.id} className="bg-white rounded-2xl shadow-lg border border-slate-100 p-6">
             <div className="flex gap-4 mb-4">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold flex-shrink-0">
